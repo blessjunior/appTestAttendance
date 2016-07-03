@@ -1,0 +1,148 @@
+/* CSS Document */
+
+.modal-dialog, .modal-dialog-1, .modal-dialog-2, .modal-dialog-3, .modal-dialog-4, .modal-dialog-5 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal-dialog:target, .modal-dialog-1:target, .modal-dialog-2:target, .modal-dialog-3:target, .modal-dialog-4:target, .modal-dialog-5:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-dialog > div, .modal-dialog-1 > div, .modal-dialog-2 > div, .modal-dialog-3 > div, .modal-dialog-4 > div, .modal-dialog-5 > div {
+    width: 560px;
+    position: relative;
+    margin: 1% auto;
+    padding: 5px 20px 13px 20px;
+    border: solid 3px #3d8b9d;/*#f58a44;*/
+    border-radius: 10px;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(#FFFFFF, #ffffff);
+    background: -webkit-linear-gradient(#FFFFFF, #ffffff);
+    background: -o-linear-gradient(#FFFFFF, #ffffff);
+}
+
+.modal-dialog-1 > div {
+    width: 230px;
+    border: none;
+}
+
+.modal-dialog-2 > div {
+    width: 400px;
+}
+
+.modal-dialog-3 > div {
+    width: 668px;
+}
+
+.modal-dialog-4 > div {
+    width: 800px;
+}
+.modal-dialog-5 > div {
+    width: 1000px;
+}
+
+.modal-dialog table td, .modal-dialog-1 table td, .modal-dialog-2 table td,
+.modal-dialog-3 table td, .modal-dialog-4 table td, .modal-dialog-5 table td {
+    font-weight: 400;
+}
+
+.close {
+    background: #ffebe6;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000000;
+    -webkit-box-shadow: 1px 1px 3px #000000;
+    box-shadow: 1px 1px 3px #000000;
+}
+
+.modal-div-close {
+    color: #FFFFFF;
+    line-height: 14px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 10px 10px 10px #b5b5b5;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border-width: 0;
+}
+
+.modal-div-close > a, .modal-div-close > div, .close > div, .close > a {
+    display: block;
+    text-decoration: none;
+    background: none;
+    border-width: 0;
+}
+
+.close:hover {
+    background: #F00000;
+}
+
+.modal-div-close:hover {
+    background: #ffebe6;
+}
+
+.modal-button {
+    font-size: 1em;
+    padding: 4px 8px 4px 4px;
+    margin-right: 4px;
+    min-width: 100px;
+    border-radius: 3px;
+    font-size: 1.0em;
+    text-decoration: none;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    background-color: #d2d2d2;
+    color: #b4b4b4;
+    transition: all ease-out 400ms;
+}
+
+.modal-button:hover {
+    background-color: #a0a0a0;
+    cursor: pointer;
+    transition: all ease-in 400ms;
+}
+
+.modal-header {
+    text-align: center;
+    text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.3);
+    background: rgba(51, 51, 51, 0.08);
+}
+
+.response-anchor {
+    border: none;
+    background: none;
+    width: 0;
+    height: 0;
+}
+
+.response-anchor:hover {
+    background: none;
+}
